@@ -4,5 +4,13 @@
 */
 
 const arr = ["apple", "banana", "orange", "grape"];
-const target = "orange";
+const target = "grape";
 
+function fun(arr,target){
+    for(let idx =0; idx <arr.length;idx++){
+        if (arr[idx] === target) {
+            console.log(idx);
+        }
+    }
+}
+fun(arr,target);

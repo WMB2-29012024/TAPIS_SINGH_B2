@@ -4,4 +4,14 @@
 */
 
 const strArr = ["banana", "apple", "orange", "grape", "kiwi"];
+function fun(strArr){
+    let str =[];
+    for(let i=0;i<strArr.length;i++){
+        if (strArr[i] !== "apple") {
+            str.push(strArr[i])
+        }
+    }
+    console.log(str);
+}
+fun(strArr);
 

@@ -5,3 +5,18 @@
 
 const strArr = ["banana", "apple", "orange", "grape", "kiwi"];
 
+function fun(strArr){
+    
+    for (let i = 0; i < strArr.length; i++) {
+        const firstChar = strArr[i][0];
+        if (firstChar === "a") {
+            console.log(strArr[i]);
+        }
+    }
+    // for (const element of strArr) {
+    //     if (element[0] === "a") {
+    //         console.log(element);
+    //     }
+    // }
+}
+fun(strArr);

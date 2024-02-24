@@ -5,3 +5,9 @@
 
 const numArr = [1, 2, 3, 4, 5];
 
+function mul(numArr){
+    for(let idx =0; idx <numArr.length;idx++){
+        console.log(2*numArr[idx]);
+    }
+}
+mul(numArr);

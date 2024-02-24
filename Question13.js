@@ -5,3 +5,12 @@
 
 const strArr = ["banana", "apple", "orange", "grape", "kiwi"];
 
+function fun(strArr){
+    let str = "";
+    for(let i=0; i<strArr.length;i++){
+        str = str.concat(strArr[i]," ");
+    }
+    console.log(str);
+
+}
+fun(strArr);

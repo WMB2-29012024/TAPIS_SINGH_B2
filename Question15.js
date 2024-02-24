@@ -5,3 +5,17 @@
 
 const strArr = ["banana", "apple", "orange", "grape", "kiwi"];
 
+function fun(strArr){
+    let arr =[];
+    for(let i =0; i<strArr.length; i++){
+        let last = strArr[i].length-1;
+        
+        if(strArr[i][last] === 'e'){
+            console.log(strArr[i]);
+            arr.push(strArr[i]);
+        }
+    }
+    console.log(arr);
+}
+fun(strArr);
+

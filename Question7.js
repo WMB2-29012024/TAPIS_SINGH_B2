@@ -3,4 +3,9 @@
 //  Question 7: Write a for-loop to log every 4th element, starting from last index
 
 const numArr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]    
-
+function alternate(numArr){
+    for(let idx =numArr.length-1;idx>=0; idx -=4){
+        console.log(numArr[idx]);
+    }
+}
+alternate(numArr);

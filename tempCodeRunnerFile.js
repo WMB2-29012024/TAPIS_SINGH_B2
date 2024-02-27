@@ -1,0 +1,1 @@
+groupSum += parseInt(s.charAt(i));

@@ -1,3 +1,4 @@
+
 class Node {
     // Node class for storing data and 
     // the reference to the next node
@@ -54,7 +55,7 @@ class Queue {
     }
 
     // Check if the queue is empty
-    isEmpty() {
+    isEmpty() { 
         return this.size === 0;
     }
 
@@ -64,34 +65,48 @@ class Queue {
     }
 }
 
-let arr1 = [1, 2, 3, 1, 4, 5, 2, 3, 6];
-let size1 =3;
-let arr2 = [8, 5, 10, 7, 9, 4, 15, 12, 90, 13];
-let size2 =4;
-let arr3 = [1,2,3,4,5];
-let size3 =3;
 
-const maxOfSub =(arr,size) => {
-    const queue = new Queue(arr.length);
 
-    let max =Number.MIN_VALUE;
-    for(let i=0; i<arr.length; i++){
-        let element = arr[i];
-        
-        max = Math.max(max, element);
-        if(i >= size-1){
-            queue.enoqueue(max);
-        }
 
+let N1 = 2;
+let  N2 = 3;
+let N3 =5;
+const decToBin = (num) => {
+
+    // let arr = [];
+    // if (num == 0) return "0";
+
+    // let str = "";
+    // while (num > 0) {
+    //     let rem = num % 2;
+    //     str = rem + str;
+    //     num = Math.floor(num / 2);
+    //     arr.push(str);
+    // }
+    // return arr;
+
+    const queue = new Queue(num);
+    let arr=[];
+    
+    if (num == 0) return "0";
+
+    let str = "";
+    while (num > 0) {
+        let rem = num % 2;
+        str = rem + str;
+        num = Math.floor(num / 2);
+        queue.enqueue(str);
+        arr.push(queue.dequeue());
 
     }
-    let num = [];
-    while(!queue.isEmpty()){
-        num.push(queue.dequeue());
-    }
-    return num;
+    // return JSON.stringify(queue);
+    return arr;
+
+
+
 }
 
-console.log(maxOfSub(arr1,size1));
-console.log(maxOfSub(arr2,size2));
-console.log(maxOfSub(arr3,size3));
+console.log(decToBin(N1));
+console.log(decToBin(N2));
+console.log(decToBin(N3));
+

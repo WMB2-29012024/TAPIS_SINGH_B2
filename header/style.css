@@ -15,6 +15,7 @@ header img{
     height:100px;
     Background-Color: #333;
     color: #fff;
+    
 }
 #navbar{
     display:flex;
@@ -34,18 +35,8 @@ header img{
 }
 
 @media (max-width:700px){
-    header{
-        height: 100px;
-        Background-Color: #333;
-        color: #fff;
-        display:flex;
-        justify-content: space-between;
-    }
-
-    header img{
-        height:100px;
-        Background-Color: #333;
-        color: #fff;
-    }
     
+
+    
+
 }

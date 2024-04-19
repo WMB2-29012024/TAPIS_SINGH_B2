@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+header{
+    height: 100px;
+    Background-Color: #333;
+    color: #fff;
+    display:flex;
+    justify-content: space-between;
+}
+header img{
+    height:100px;
+    Background-Color: #333;
+    color: #fff;
+    
+}
+#navbar{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+#navbar li{
+    list-style:none;
+    padding:0 20px;
+    
+    
+}
+#navbar li a{
+   color: #fff; 
+   text-decoration: none;
+   font-size: 1.5rem;   
+}
+
+@media (max-width:700px){
+    
+
+    
+
+}

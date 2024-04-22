@@ -17,6 +17,9 @@ section{
     align-items: center;
     border-radius: 50%;
     animation: animateBg 10s linear infinite;
+    background-color: darkcyan;
+    margin-top: 140px;
+   
 
     
 }

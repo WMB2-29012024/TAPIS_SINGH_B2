@@ -1,0 +1,14 @@
+.container{
+  width:400px;
+  height:auto;
+  border: 1px solid #777;
+  background: #222;
+  border-radius: 15px;
+  display: inline-block;
+  margin: 2rem;
+  color:#fff;
+}
+.container p,h1{
+  
+  margin: 12px;
+}
